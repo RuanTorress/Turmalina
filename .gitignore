@@ -64,3 +64,7 @@ coverage/
 
 # Temporary files
 /tmp/
+
+# Demo and test files
+demo.html
+*.test.html
