@@ -1,0 +1,27 @@
+# Flutter analysis options
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    # Additional rules for code quality
+    prefer_const_constructors: true
+    prefer_const_literals_to_create_immutables: true
+    prefer_const_declarations: true
+    avoid_print: false  # Allow print statements for debugging
+    sort_child_properties_last: true
+    use_key_in_widget_constructors: true
+    prefer_single_quotes: true
+    require_trailing_commas: false
+
+analyzer:
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+  errors:
+    # Treat missing required parameters as warnings instead of errors
+    missing_required_param: warning
+    # Make lints warnings instead of errors  
+    todo: ignore
+  strong-mode:
+    implicit-casts: false
+    implicit-dynamic: false
